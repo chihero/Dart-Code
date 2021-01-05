@@ -117,8 +117,8 @@ async function runAllTests(): Promise<void> {
 			await runTests("flutter_test_debug", "flutter_hello_world");
 		}
 		if (!process.env.BOT || process.env.BOT === "misc") {
-			await runTests("dart_create_tests", "dart_create_tests.code-workspace");
-			await runTests("not_activated/dart_create", "empty");
+			// await runTests("dart_create_tests", "dart_create_tests.code-workspace");
+			// await runTests("not_activated/dart_create", "empty");
 			await runTests("multi_root", "projects.code-workspace");
 			await runTests("multi_project_folder", "");
 			await runTests("not_activated/flutter_create", "empty");
